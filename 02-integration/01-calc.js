@@ -1,7 +1,34 @@
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
+function sum(num1 = 0 , num2 = 0) {
+  return num1 + num2;
+}
+
+function difference(num1 = 0, num2 = 0) {
+  return num1 - num2;
+}
+
+function product(num1 = 0, num2 = 1) {
+  return num1 * num2;
+}
+
+function quotient(num1 = 0, num2 = 1) {
+  if (num2 == 0) {
+    return'ERROR'
+  }
+  else
+  return num1 / num2;
+}
+
+function calc(operation, num1, num2) {
+  switch (operation) {
+    case 'add' : return sum(num1, num2); break;
+    case 'subtract' : return difference(num1, num2); break;
+    case 'multiply' : return product(num1, num2); break;
+    case 'divide' : return quotient(num1, num2); break;
+    default : return 'Operation not supported.';
+  } 
 
 }
 
