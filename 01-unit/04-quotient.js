@@ -45,6 +45,9 @@ try {
   // Test Case 5
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
+  var result = quotient();
+  if (result !== 0) throw new Error('Expected quotient() to be 0. Received: ' + result);
+  console.log('All tests passed successfully.');
 
   console.log('All tests passed successfully.');
 
